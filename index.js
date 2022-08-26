@@ -7,7 +7,7 @@ const port = process.env.port || 3000;
 
 // Define a "root" route directly on app
 // Tomorrow, we'll use best practice routing
-app.use('/', function (req, res) {
+app.get('/juliacookingapp.herokuapp.com ', function (req, res) {
   res.send('<h1>First Cooking Application !</h1>');
 });
 
