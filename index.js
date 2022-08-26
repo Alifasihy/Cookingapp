@@ -7,12 +7,12 @@ const port = process.env.port || 3000;
 
 // Define a "root" route directly on app
 // Tomorrow, we'll use best practice routing
-app.get('/juliacookingapp.herokuapp.com ', function (req, res) {
+app.get('/', function (req, res) {
   res.send('<h1>First Cooking Application !</h1>');
 });
 
 // Tell the app to listen on port 3000
 // for HTTP requests from clients
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Listening on port 3000');
 });
